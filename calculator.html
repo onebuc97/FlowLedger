@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/calculator.css">
+    <title>Loan Calculator</title>
+</head>
+<body>
+    <header class="hero">
+        <div id="navbar" class="navbar">
+             <h1 class="logo">
+                 <span class="text-primary"><i class="fas fa-book-open"></i> FLow</span>Ledger
+             </h1>
+             <nav>
+                 <ul>
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="calculator.html">Calculator</a></li>
+                     <li><a href="index.html#about">About</a></li>
+                     <li><a href="index.html#cases">Cases</a></li>
+                     <li><a href="blog.html">Blog</a></li>
+                     <li><a href="index.html#contact">Contact</a></li>
+                 </ul>
+             </nav>
+        </div>
+        
+    </header>
+    <section class="calc-info">
+        <h1><span class="text-primary">FLow</span> Ledger</h1>
+        <p>Welcome to our online loan calculator designed to provide financial assistance for people who are thinking about financing for short or long-term recovery.</p>
+    </section>
+    <section>
+        <div class="calculator-container" id="container">
+                <form class="form" name="loandata" id="loandata">
+                    <table class="table">
+                        <tr class="table-header">
+                            <th>
+                                Description
+                            </th>
+                            <th>
+                                Data Entry
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="amount">
+                                Loan Amount
+                            </td>
+                            <td>
+                                <input class="input" type="text" name="principle" id="principle"> 
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="length">
+                                Loan Length in Years
+                            </td>
+                            <td>
+                                <input class="input" type="text" name="years" id="years">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="rate">
+                                Interest Rate
+                            </td>
+                            <td>
+                                <input class="input" type="text" name="interest" id="interest">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button class="btn-calc" id="calc">Calculate</button>
+                            </td>
+                            <td>
+                                <button class="btn-reset">Reset</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="reg-payment"></td>
+                                Monthly Payment
+                            </td>
+                            <td>
+                                <input class="input" type="number" name="payment" id="payment">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="total-payment">
+                                Total Payment
+                            </td>
+                            <td>
+                                <input class="input" type="text" name="total" id="total">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="total-interest">
+                                Total Interest
+                            </td>
+                            <td>
+                                <input class="input" type="text" name="totalinterest" id="totalinterest">
+                            </td>
+                        </tr>
+                    </table>
+
+                </form> 
+            </div>
+        </div>
+    </section>
+    <script src="./JS-extra/calculator.js"></script>
+</body>
+</html>
+
+ 
